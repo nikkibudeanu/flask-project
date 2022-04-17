@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-{{ company[1]["name"] }}
+
     <h2>{{ page_title }}</h2>
     <p>
         The formation of the group grew out of a meeting Gandalf had with Thorin in Bree which kindled Thorin's interest
@@ -12,31 +12,19 @@
         to leave on other business, welcomed a fourteenth to fill into their party.
     </p>
 
+    {% for member in company %}
     <div class="row featurette">
         <div class="col-md-7">
-            <h3>Thorin Oakeanshield</h3>
+            <h3>{{ member.name }}</h3>
             <p>
-                Thorin II Oakenshield is the Leader of the Company, the King of Durin's Folk and former Prince of
-                Erebor, has many of the speaking roles and is known for combat achievements, killing Orcs on countless
-                occasions. He often acts in a confrontational manner, but is a great leader among the Dwarves.
+               {{ member.description }}
             </p>
         </div>
         <div class="col-md-5">
-            <img src="https://static.wikia.nocookie.net/lotr/images/c/c9/Hobbit-poster-thorin-richard-armitage.jpg" alt="Thorin">
+            <img src="{{ member.image_source }}" alt="Thorin" class="featurette-image image-responsive">
         </div>
     </div>
-    <br>
-    <div class="row featurette">
-        <div class="col-md-5">
-            <img src="https://static.wikia.nocookie.net/lotr/images/b/b4/The-Hobbit-Fili-and-Kili.jpg" alt="Fili and Killi">
-        </div>
-        <div class="col-md-7">
-            <h3>Fili and Kili</h3>
-            <p>
-                Fíli and Kíli were the two most active Dwarves of Thorin's company, and apart from Balin, and possibly
-                Bombur, they appeared more frequently as "individual" characters in Tolkien's novel than the rest of
-                Thorin's companions, who were most often named only in "group" references to the entire company.
-            </p>
-        </div>
-    </div>
+
+    <hr class="featurette-divider">
+{% endfor %}
 {% endblock %}
