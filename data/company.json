@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Thorin Oakenshield",
+        "description": "Thorin II Oakenshield is the Leader of the Company, the King of Durin's Folk and former Prince of Erebor, has many of the speaking roles and is known for combat achievements, killing Orcs on countless occasions. He often acts in a confrontational manner, but is a great leader among the Dwarves.",
+        "image_source": "https://static.wikia.nocookie.net/lotr/images/c/c9/Hobbit-poster-thorin-richard-armitage.jpg"
+    },
+    {
+        "name": "Fili and Kili",
+        "description": "Fíli and Kíli were the two most active Dwarves of Thorin's company, and apart from Balin, and possibly Bombur, they appeared more frequently as individual characters in Tolkien's novel than the rest of Thorin's companions, who were most often named only in group references to the entire company.",
+        "image_source": "https://static.wikia.nocookie.net/lotr/images/b/b4/The-Hobbit-Fili-and-Kili.jpg"
+    }
+ 
+]
